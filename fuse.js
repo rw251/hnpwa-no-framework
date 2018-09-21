@@ -57,7 +57,7 @@ Sparky.task('config', () => {
     });
 
   if (!isProduction) {
-    fuse.dev({ fallback: 'index.html' }); // fallback ensures all 404s get the index.html
+    fuse.dev({ fallback: 'index.html', port: 4545 }); // fallback ensures all 404s get the index.html
   }
 });
 
