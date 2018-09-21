@@ -1,0 +1,67 @@
+
+    <!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="/dbe20a01-styles.css">   
+      <noscript>
+    <style>
+      noscript {
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: yellow;
+        width: 100%;
+      }
+      noscript p {
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+    </style>
+  </noscript>
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  <noscript>
+    <p>You seem to have JavaScript disabled. Unfortunately this site won't work without it. Check out <a href="https://www.enable-javascript.com/" target="_blank">these instructions</a> if you want to enable javascript.</p>
+  </noscript>
+  <div id="container" style="display: none">
+    <div class="topnav">
+      <a class="active" id='tab-top' data-href='/'>top</a>
+      <a id='tab-new' data-href='/new/1'>new</a>
+      <a id='tab-show' data-href='/show/1'>show</a>  
+      <a id='tab-ask' data-href='/ask/1'>ask</a> 
+      <a id='tab-jobs' data-href='/jobs/1'>jobs</a> 
+
+      <a id='tab-about' data-href='/about'>about</a>     
+    </div>
+
+    <p id="main"></p>
+
+  </div>
+    <script type="text/javascript" src="/app-8f86cd7.js"></script>  
+    <script type='text/rw' id='about'><h1>Simple Hacker News Clone</h1>
+<p class="about-tmpl">Some more info</p></script><script type='text/rw' id='top'><div class="pagination">
+</div>
+<ol class="page-items">
+  {{pageItems}}
+  <li data-id="{{id}}">
+    <h2><a href="{{url}}" target="_blank">{{title}}</a></h2>
+    {{points}} points by {{user}} {{time_ago}} | discuss
+  </li>
+  {{/pageItems}}
+</ol></script>     
+    </body>
+
+</html>
+  
